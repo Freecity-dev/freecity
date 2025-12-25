@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FreeCity — Angelica</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: #eee;
+            text-align: center;
+            padding: 40px;
+        }
+        .card {
+            background: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        button {
+            padding: 10px 20px;
+            margin-top: 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h1>🌍 FreeCity</h1>
+
+<div class="card">
+    <h2>{{ city.name }}</h2>
+    <p>Type : {{ city.type }}</p>
+    <p>Population : {{ city.population }}</p>
+    <p>Bonheur : {{ city.happiness }}</p>
+    <p>Budget : {{ city.budget }} FCC</p>
+
+    <form action="/tick">
+        <button>⏱️ Passer un cycle</button>
+    </form>
+</div>
+
+</body>
+</html>
+Add web interface
